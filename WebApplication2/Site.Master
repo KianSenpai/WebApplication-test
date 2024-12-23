@@ -7,14 +7,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
-    <script type="module" src="/node_modules/@gup-ds/components/dist/components.js"></script>
+    <script type="module" src="/Components/components.js"></script>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="/node_modules/@gup-ds/components/dist/styles.css">
+    <link rel="stylesheet" href="/Components/styles.css">
 </head>
 <body>
     <form runat="server">
