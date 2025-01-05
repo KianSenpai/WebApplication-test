@@ -37,29 +37,24 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+        <gup-header nav-aria-label="Service Navigation Header">
+            <gup-track slot="start">
+                <gup-button appearance="text">
+                    Save &amp; exit
+                    <gup-icon slot="icon-start" icon-name="close" height="24" width="24"></gup-icon>
+                </gup-button>
+            </gup-track>
+            <gup-track slot="end" horizontal-alignment="right">
+                <gup-button appearance="text">
+                    Do you need help?
+                    <gup-icon slot="icon-start" icon-name="live-help" height="24" width="24"></gup-icon>
+                </gup-button>
+            </gup-track>
+        </gup-header>
+        <gup-content-header page-title="Continue Study"></gup-content-header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
         </div>
     </form>
     <asp:PlaceHolder runat="server">
