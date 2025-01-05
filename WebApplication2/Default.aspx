@@ -1,37 +1,10 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication2._Default" %>
+<%@ Register Src="~/StepperControl.ascx" TagPrefix="uc" TagName="Stepper" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
     <gup-wizard-main>
-        <gup-details content-appearance="sink" closed-icon="add-circle" open-icon="remove-circle">
-            <span slot="label">Step 1 of 8</span>
-            <gup-stepper style="" static-mode="">
-                <gup-stepper-item step-number="1" step-type="selected" role="listitem" static-mode="">
-                    <span slot="label">Identification and name details</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="2" step-type="default" role="listitem" static-mode="">
-                    <span slot="label">Personal details</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="3" role="listitem" step-type="default" static-mode="">
-                    <span slot="label">Contact information</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="4" role="listitem" step-type="default" static-mode="">
-                    <span slot="label">Highschool academic details</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="5" role="listitem" step-type="default" static-mode="">
-                    <span slot="label">Achademic details of qualification you want to study</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="6" role="listitem" step-type="default" static-mode="">
-                    <span slot="label">Upload files</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="7" role="listitem" step-type="default" static-mode="">
-                    <span slot="label">Review your application</span>
-                </gup-stepper-item>
-                <gup-stepper-item step-number="8" role="listitem" step-type="default" static-mode="">
-                    <span slot="label">Step 8</span>
-                </gup-stepper-item>
-            </gup-stepper>
-        </gup-details>
+        <uc:Stepper runat="server" ID="stepperControl" CurrentStep="1" />
+
         <h2 style="font-size: 28px; font-weight: 700; margin-top: var(--gup-spacing-between-text);">Identifacion and name details</h2>
         <form>
             <gup-form-list style="margin-block: 48px;">
