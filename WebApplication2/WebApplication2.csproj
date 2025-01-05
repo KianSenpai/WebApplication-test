@@ -230,6 +230,7 @@
     <Content Include=".npmrc" />
     <Content Include="package.json" />
     <Content Include="package-lock.json" />
+    <Content Include="StepperControl.ascx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -261,7 +262,8 @@
     <Content Include="Step2.aspx" />
     <Content Include="Step3.aspx" />
     <Content Include="Step4.aspx" />
-    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Step6.aspx" />
+    <Content Include="Step7.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -336,12 +338,26 @@
     <Compile Include="Step4.aspx.designer.cs">
       <DependentUpon>Step4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    <Compile Include="Step6.aspx.cs">
+      <DependentUpon>Step6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    <Compile Include="Step6.aspx.designer.cs">
+      <DependentUpon>Step6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Step7.aspx.cs">
+      <DependentUpon>Step7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Step7.aspx.designer.cs">
+      <DependentUpon>Step7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StepperControl.ascx.cs">
+      <DependentUpon>StepperControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StepperControl.ascx.designer.cs">
+      <DependentUpon>StepperControl.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
